@@ -406,41 +406,36 @@
         ============================================================ */
         @media (max-width: 767px) {
 
-            /* Ingrandimento countdown mobile */
-            .count-no { 
-                font-size: clamp(2.8rem, 12vw, 4rem) !important; 
-            }
-            #home .text-center[style] { 
-                min-width: 55px !important; 
-            }
+            /* Navbar */
+            .nav-container { gap: 3px; }
+            .nav-brand-static { font-size: 1.4rem; }
+            .nav-link-custom { font-size: 0.65rem !important; padding: 4px 5px !important; letter-spacing: 0px !important; }
 
-            /* Ingrandimento testo navbar mobile */
-            .nav-link-custom { 
-                font-size: 0.6rem !important; 
-                padding: 5px 6px !important; 
-                letter-spacing: 0px !important; 
-            }
-            /* --------------------------- */
+            /* Sezioni */
+            .content-box { padding: 0 20px; }
 
-            /* Meno padding verticale nelle sezioni */
-            .content-box {
-                padding: 0 20px;
-            }
+            /* Home: spazio tra "Chiara & Danilo" e il countdown */
+            #home .hero-content-wrapper .d-flex.justify-content-center { margin-top: 7rem !important; }
 
-            /* Correzione countdown */
+            /* Home: countdown */
             #home .d-flex.gap-3 { gap: 0.5rem !important; }
             #home .text-center[style] { min-width: 40px !important; }
+            .count-no {
+                font-size: clamp(2.8rem, 12vw, 4rem) !important;
+                text-shadow: 3px 3px 16px rgba(0, 0, 0, 0.88) !important;
+            }
+            
+            .hero-content-wrapper { 
+                padding-top: 60px;      /* spazio sopra "Il nostro matrimonio" */
+                padding-bottom: 10px;   /* spazio sotto la data */
+                padding-left: 10px;     /* margine dal bordo sinistro */
+                padding-right: 10px;    /* margine dal bordo destro */
+            }
 
             /* Blog card: immagine sopra, testo sotto */
-            .blog-card .row {
-                flex-direction: column;
-            }
+            .blog-card .row { flex-direction: column; }
             .blog-card .col-md-5,
-            .blog-card .col-md-7 {
-                width: 100%;
-                max-width: 100%;
-            }
-            /* Immagine blog card: non tagliata, proporzioni naturali */
+            .blog-card .col-md-7 { width: 100%; max-width: 100%; }
             .blog-card .hero-section {
                 height: auto;
                 aspect-ratio: 4 / 3;
@@ -449,7 +444,7 @@
                 background-position: center;
             }
 
-            /* Location: immagine più piccola su mobile */
+            /* Location */
             #location .hero-section {
                 height: 28vh;
                 background-size: contain;
@@ -457,53 +452,24 @@
                 background-position: center;
                 background-color: transparent;
             }
-            /* Separatore blog card: stile coerente mobile */
 
-            /* Navbar: brand un po' più piccolo, gap ridotto */
-            .nav-container { gap: 3px; }
-            .nav-brand-static { font-size: 1.4rem; }
-            .nav-link-custom  { font-size: 0.5rem; padding: 4px 5px; letter-spacing: 0.5px; }
-
-            /* Home: countdown più compatto */
-            /* Modifica punto 4: Ombra più marcata */
-            .count-no { 
-                font-size: clamp(2.8rem, 10vw, 4rem) !important; 
-                text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.883) !important; /* Ombra più scura e diffusa */
-            }
-            .hero-content-wrapper { padding: 15px 10px; }
-            /* Modifica: Sposta solo countdown e data verso il basso su mobile */
-            @media (max-width: 767px) {
-                #home .mt-4.d-flex.justify-content-center.gap-3 {
-                    margin-top: 150px !important; /* Aumenta questo valore per spingere più giù */
-                }
-            }
-            /* Location: titolo castello più piccolo */
-            .font-location-title { font-size: clamp(2.2rem, 9vw, 4rem); }
-
-            /* Regalo: immagine + iban in colonna centrata */
-            #gift .content-box > div[style] {
-                flex-direction: column;
-                align-items: center;
-            }
+            /* Regalo */
+            #gift .content-box > div[style] { flex-direction: column; align-items: center; }
             .iban-container { margin-top: 16px; }
             .iban-card { max-width: 100%; }
 
-            /* Foto: card WedShoots full width */
-            .general-card-card {
-                /*max-width: 100% !important;*/
-                padding: 16px 12px;
-            }
-            /* Bottoni app store affiancati su mobile */
-            .d-flex.flex-wrap.gap-3 {
-                gap: 10px !important;
-            }
+            /* Foto */
+            .general-card-card { padding: 16px 12px; }
 
-            /* RSVP: meno padding nel form */
+            /* RSVP */
             .tally-container { padding: 8px 0; }
 
-            /* Margine inferiore blog card ridotto */
+            /* Blog card: margine inferiore ridotto */
             .blog-card.mb-5 { margin-bottom: 1.5rem !important; }
         }
+
+        /* Location: titolo castello */
+        .font-location-title { font-size: clamp(2.2rem, 9vw, 4rem); }
 
         /* Sottolineatura link in location per visibilità */
         #location a { 
@@ -943,8 +909,8 @@
             <div class="content-box text-center">
                 <h2 class="lang-it" style="font-size: 1.5rem; color: var(--gold);">VIAGGIO DI NOZZE</h2>
                 <h2 class="lang-en" style="font-size: 1.5rem; color: var(--gold);">HONEYMOON</h2>
-                <p class="lang-it mt-3">Siamo diretti in <strong>Tanzania</strong>! <br>Se volete contribuire a farci scalare il Kilimanjaro, a fotogragare un leone e a farci rilassare sulle spiagge di Zanzibar:</p>
-                <p class="lang-en mt-3">We're heading to <strong>Tanzania</strong>! <br> If you wish to help us climb the Kilimanjaro, photograph a lion and relax on the beaches of Zanzibar:</p>
+                <p class="lang-it mt-3">Siamo diretti in <strong>Tanzania</strong>! <br>Se desiderate contribuire alla nostra luna di miele, ci aiuterete a scalare il Kilimanjaro, a vivere l'emozione di un safari e a riposarci sulle rive di Zanzibar.</p>
+                <p class="lang-en mt-3">We're heading to <strong>Tanzania</strong>! <br>If you’d like to support our honeymoon, you’ll be part of our journey as we climb Kilimanjaro, explore the wild on safari, and unwind in Zanzibar:</p>
 
                 <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
                     <div style="flex: 1; min-width: 200px; max-width: 350px;">
