@@ -471,9 +471,11 @@
                 text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.883) !important; /* Ombra più scura e diffusa */
             }
             .hero-content-wrapper { padding: 15px 10px; }
-            #home .hero-section {
-                align-items: flex-end !important; /* Allinea al fondo invece che al centro */
-                padding-bottom: 80px;            /* Distanza dal bordo inferiore */
+            /* Modifica: Sposta solo countdown e data verso il basso su mobile */
+            @media (max-width: 767px) {
+                #home .mt-4.d-flex.justify-content-center.gap-3 {
+                    margin-top: 150px !important; /* Aumenta questo valore per spingere più giù */
+                }
             }
             /* Location: titolo castello più piccolo */
             .font-location-title { font-size: clamp(2.2rem, 9vw, 4rem); }
@@ -972,8 +974,8 @@
                 <div class="text-center mb-4">
                     <h2 class="lang-it" style="font-size: 1rem; color: var(--gold);">RSVP</h2>
                     <h2 class="lang-en" style="font-size: 1rem; color: var(--gold);">RSVP</h2>
-                    <p class="lang-it">Vi preghiamo di confermare entro il 1° Giugno 2026.</p>
-                    <p class="lang-en">Please confirm your attendance by June 1st, 2026.</p>
+                    <p class="lang-it">Vi preghiamo di confermare entro il 15 Maggio 2026.</p>
+                    <p class="lang-en">Please confirm your attendance by May 15th, 2026.</p>
                 </div>
                 <div class="tally-container">
                     <div class="lang-it">
