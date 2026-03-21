@@ -103,7 +103,7 @@
             color: var(--primary) !important;
             transform: translateY(-2px);
         }
-
+        
         @media (min-width: 992px) {
             .btn-dark { padding: 14px 35px; font-size: 0.8rem; }
         }
@@ -472,7 +472,7 @@
         .font-location-title { font-size: clamp(2.2rem, 9vw, 4rem); }
 
         /* Sottolineatura link in location per visibilità */
-        #location a { 
+        #location a:not(.btn) { 
             text-decoration: underline !important; 
             text-underline-offset: 4px; 
         }
