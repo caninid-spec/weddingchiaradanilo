@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding C & D</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 
     <style>
         /* ============================================================
@@ -23,8 +24,49 @@
 
 
         /* ============================================================
-           VARIABILI GLOBALI
+           ICONE SVG INLINE (sostituzione Bootstrap Icons)
         ============================================================ */
+        .bi {
+            display: inline-block;
+            vertical-align: -0.125em;
+            fill: currentColor;
+        }
+        .bi::before {
+            content: '';
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background-repeat: no-repeat;
+            background-size: 1em 1em;
+            background-position: center;
+        }
+        .bi-arrow-right-square::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z'/%3E%3Cpath fill='%231a3c40' d='M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8'/%3E%3C/svg%3E");
+        }
+        .bi-arrow-left-square::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z'/%3E%3Cpath fill='%231a3c40' d='M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5A.5.5 0 0 1 12 8'/%3E%3C/svg%3E");
+        }
+        .bi-camera-fill::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23c49a6c' d='M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0'/%3E%3Cpath fill='%23c49a6c' d='M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0'/%3E%3C/svg%3E");
+        }
+        .bi-apple::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-3.345.728-3.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282'/%3E%3Cpath fill='%231a3c40' d='M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-3.345.728-3.43'/%3E%3C/svg%3E");
+        }
+        .bi-google-play::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L2.333.215C1.39-.341.229.24 1.03 1.27'/%3E%3C/svg%3E");
+        }
+        .bi-bank::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 4h.89zM2.5 7h1v6.5H5V7h1.5v6.5H8V7h1.5v6.5H11V7h1.5v6.5h.957a.5.5 0 0 1 .491.408l.5 3A.5.5 0 0 1 14 17H2a.5.5 0 0 1-.491-.592l.5-3A.5.5 0 0 1 2.5 13z'/%3E%3C/svg%3E");
+        }
+
+        /* Dimensioni speciali per le icone fs-5 di Bootstrap */
+        .fs-5.bi::before { width: 1.25rem; height: 1.25rem; background-size: 1.25rem; }
+        /* camera-fill usa font-size: 2rem inline, il ::before deve scalare di conseguenza */
+        .bi-camera-fill::before { width: 2rem; height: 2rem; background-size: 2rem; }
+        /* bank usa dimensione default */
+        .bi-bank::before { width: 1.2rem; height: 1.2rem; background-size: 1.2rem; }
+
+
         :root {
             /* Colori */
             --primary:      #1a3c40;
@@ -32,19 +74,12 @@
             --light-bg:     #fffefc;
             --card-bg:      transparent;
             --navbar:       #fffefc;
-            /*--card-border:  3px solid var(--gold);*/
-            /*--card-radius:  8px;*/
-            /*--card-shadow:  0 2px 8px rgba(0,0,0,0.07);*/
 
             /* Font */
             --font-body:      'Montserrat', sans-serif;
             --font-ui:        'Montserrat', sans-serif;
             --font-serif:     'Montserrat', sans-serif;
             --font-signature: 'WeddingFontCustom', serif;
-            /*--font-body:      'Lato', sans-serif;
-            --font-ui:        'Montserrat', sans-serif;
-            --font-serif:     'Playfair Display', serif;
-            --font-signature: 'WeddingFontCustom', serif;*/
 
             /* Spaziatura */
             --content-max-width: 960px;
@@ -120,17 +155,6 @@
             /*box-shadow: 0 2px 10px rgba(0,0,0,0.2);*/
         }
         
-        /*/*Linea Navbar */ 
-        /*.navbar-custom::after {
-        /*    content: '';
-        /*    display: block;
-        /*    width: 60%;          /* larghezza della linea */
-        /*    max-width: 700px;    /* stesso max-width del content-box */
-        /*    margin: 0 auto;
-        /*    margin-top: 8px;  /* aumenta a piacere */
-        /*    border-bottom: 1px solid var(--primary);
-        /*} */
-
         .nav-container {
             display: flex;
             flex-direction: column;
@@ -218,19 +242,6 @@
 .hero-overlay               { position: absolute; inset: 0; background: rgba(0, 0, 0, 0); }
         .hero-content-wrapper       { position: relative; color: white; text-align: center; z-index: 2; padding: 20px; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); }
 
-/*        @media (min-width: 768px) {
-/*            #home .hero-section { background-image: url('b.jpg'); }
-/*        }*/
-
-
-/*@media (min-width: 768px) {
-/*    #home .hero-section {
-/*        background-image: url('b.jpg');
-/*        background-size: cover;
-/*        background-position: center 40%; /* ← modifica questo */
-/*    }
-/*}
-
         /* Fix location su desktop: immagine intera senza tagli */
         @media (min-width: 992px) {
             #location .hero-section {
@@ -241,18 +252,6 @@
                 background-color: transparent;
             }
         }
-
-     /*   /* Fix location su desktop: immagine intera senza tagli */
-     /*   @media (min-width: 992px) {
-     /*       #location .hero-section {
-     /*           height: 50vh;
-     /*           background-size: contain;
-     /*           background-repeat: no-repeat;
-     /*           background-position: center bottom;
-     /*           background-color: transparent;
-     /*       }
-     /*   }
-
 
         /* ============================================================
            TIPOGRAFIA SPECIALE
@@ -314,13 +313,6 @@
             padding-bottom: 2rem;
             position: relative;
         }
-        /*.blog-card:not(:last-child)::after {
-            content: '';
-            display: block;
-            width: 40%;
-            margin: 0 auto 0;
-            border-top: 1px solid rgba(26, 60, 64, 0.2);
-        }*/
 
         /* ============================================================
            INNER CARD (alberghi, iban, ecc.)
@@ -531,7 +523,7 @@
                 <h2 class="lang-en" style="font-size: 1rem; color: var(--gold); margin-bottom: 5px;">VENUE</h2>
             </div>
 
-            <div class="hero-section" style="background-image: url('location.png');"></div>
+            <div class="hero-section" style="background-image: url('location.webp');"></div>
 
             <div class="content-box text-center" style="padding-top: 15px;">
                 <h5 class="font-location-title lang-it">Castello di Torre in Pietra</h5>
@@ -608,18 +600,7 @@
                                         <a target="_blank" rel="nofollow" href="https://www.hotelcorsi.it/en/" class="small text-decoration-none lang-en" style="color: var(--primary);">Website →</a>
                                     </div>
                                 </div>
-                                <!-- QC Terme -->
-                                 <!--
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">                                        <h6 class="mb-1 lang-it"><strong>QC Termeroma Spa e Resort</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>QC Termeroma Spa e Resort</strong></h6>
-                                        <p class="mb-1 small lang-it">Resort con spa vicino all'aeroporto di Roma Fiumicino, ideale per relax prima o dopo il volo.</p>
-                                        <p class="mb-1 small lang-en">Spa resort near Rome Fiumicino Airport, perfect to relax before or after your flight.</p>
-                                        <a target="_blank" rel="nofollow" href="https://www.qcterme.com/it/destinazioni/roma" class="small text-decoration-none lang-it" style="color: var(--primary);">Sito Web →</a>
-                                        <a target="_blank" rel="nofollow" href="https://www.qcterme.com/destinations/roma"    class="small text-decoration-none lang-en" style="color: var(--primary);">Website →</a>
-                                    </div>
-                                </div>
-                                -->
+
                                 <!-- B&B Hotel -->
                                 <div class="col-12 mb-2">
                                     <div class="inner-card">
@@ -797,112 +778,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- ── FOTO ──--><!--
-        <div class="tab-pane fade" id="photo">
-            <div class="content-box">
-                <div class="text-center mb-5">
-                    <h2 class="lang-it" style="font-size: 1rem; color: var(--gold);">I TUOI SCATTI</h2>
-                    <h2 class="lang-en" style="font-size: 1rem; color: var(--gold);">SHARE YOUR SHOTS</h2>
-                    <p class="lang-it mt-3">Condividi le tue foto su questo album per rendere questo giorno indimenticabile!</p>
-                    <p class="lang-en mt-3">Share your shots on this album, to make this day unforgettable!</p>
-
-                    <article class="blog-card mb-5">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-md-5 text-center">
-                                <img src="QR.png" style="width: 200px; height: 200px; object-fit: contain;" alt="QR Code">
-                            </div>
-                            <div class="col-md-7 p-4 text-start">
-                                <h5 class="text-uppercase lang-it" style="font-size: 1.2rem; color: var(--gold); margin-bottom: 15px;">
-                                    <i class="bi bi-camera-fill" style="font-size: 2rem; color: var(--gold); margin-right: 8px;"></i>
-                                    <span class="iban-title" style="color: var(--gold); font-size: 1.2rem;">WedShoots</span>
-                                </h5>
-                                <h5 class="text-uppercase lang-en" style="font-size: 1.2rem; color: var(--gold); margin-bottom: 15px;">
-                                    <i class="bi bi-camera-fill" style="font-size: 2rem; color: var(--gold); margin-right: 8px;"></i>
-                                    <span class="iban-title" style="color: var(--gold); font-size: 1.2rem;">WedShoots</span>
-                                </h5>
-                            
-                                <div class="iban-title">Codice Album</div>
-                                <p class="iban-text">UKaa0838d4</p>
-                            
-                                <div class="mt-3">
-                                    <h5 class="text-uppercase mb-2 lang-it" style="font-size: 1rem; color: var(--gold); letter-spacing: 2px;">Scarica l'App</h5>
-                                    <h5 class="text-uppercase mb-2 lang-en" style="font-size: 1rem; color: var(--gold); letter-spacing: 2px;">Download the App</h5>
-                                    <div class="d-flex flex-wrap gap-2 mb-3">
-                                        <a href="https://apps.apple.com/gb/app/wedshoots/id660256196" class="btn btn-outline-dark d-flex align-items-center px-2 py-1" style="border-radius: 8px; text-transform: none; letter-spacing: 0;">
-                                            <i class="bi bi-apple fs-5 me-2" style="line-height: 1;"></i>
-                                            <div class="text-start d-flex flex-column justify-content-center">
-                                                <small style="font-size: 0.55rem; line-height: 1.2;">Download on the</small>
-                                                <span style="font-weight: 600; font-size: 0.75rem; line-height: 1.2;">App Store</span>
-                                            </div>
-                                        </a>
-                                        <a href="https://play.google.com/store/apps/details?id=net.bodas.android.wedshoots&pcampaignid=web_share" class="btn btn-outline-dark d-flex align-items-center px-2 py-1" style="border-radius: 8px; text-transform: none; letter-spacing: 0;">
-                                            <i class="bi bi-google-play fs-5 me-2" style="line-height: 1;"></i>
-                                            <div class="text-start d-flex flex-column justify-content-center">
-                                                <small style="font-size: 0.55rem; line-height: 1.2;">Get it on</small>
-                                                <span style="font-weight: 600; font-size: 0.75rem; line-height: 1.2;">Google Play</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="http://www.wedshoots.com/uk/download?albumId=UKaa0838d4" target="_blank" class="btn btn-dark lang-it" style="width: 60%;">Accedi alla versione Web</a>
-                                        <a href="http://www.wedshoots.com/uk/download?albumId=UKaa0838d4" target="_blank" class="btn btn-dark lang-en" style="width: auto;">Access Web version</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>-->
-
-
-                <!-- Card: Spostamenti -->
-
-<!--
-                <div class="iban-container mt-5" style="margin-top: 30px !important;">
-                    <div class="iban-card" style="max-width: 380px; width: 80%;">
-                        <div style="padding: 6px; display: inline-block; border-radius: 8px; line-height: 0; background:transparent;">
-                            <img src="QR.png" alt="QR Code" style="width: 160px; height: 160px; object-fit: contain;">
-                        </div>
-                        <br>
-                        <br>
-                        <div class="d-flex align-items-center justify-content-center mb-2">
-                            <i class="bi bi-camera-fill" style="font-size: 2rem; color: var(--gold); margin-right: 8px;"></i>
-                            <span class="iban-title" style="color: var(--gold);font-size: 1.2rem;">WedShoots</span>
-                        </div>
-                        
-                        <div class="iban-title">Codice Album</div>
-                        <p class="iban-text">UKaa0838d4</p>
-                    </div>
-                </div>
-
-                <div class="mt-3">
-                    <h5 class="text-uppercase mb-4 lang-it" style="font-size: 1rem; color: var(--gold); letter-spacing: 2px;">Scarica l'App</h5>
-                    <h5 class="text-uppercase mb-4 lang-en" style="font-size: 1rem; color: var(--gold); letter-spacing: 2px;">Download the App</h5>
-                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
-                        <a href="https://apps.apple.com/gb/app/wedshoots/id660256196" class="btn btn-outline-dark d-flex align-items-center px-2 py-1" style="border-radius: 8px; text-transform: none; letter-spacing: 0;">
-                            <i class="bi bi-apple fs-5 me-2" style="line-height: 1;"></i>
-                            <div class="text-start d-flex flex-column justify-content-center">
-                                <small style="font-size: 0.55rem; line-height: 1.2;">Download on the</small>
-                                <span style="font-weight: 600; font-size: 0.75rem; line-height: 1.2;">App Store</span>
-                            </div>
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=net.bodas.android.wedshoots&pcampaignid=web_share" class="btn btn-outline-dark d-flex align-items-center px-2 py-1" style="border-radius: 8px; text-transform: none; letter-spacing: 0;">
-                            <i class="bi bi-google-play fs-5 me-2" style="line-height: 1;"></i>
-                            <div class="text-start d-flex flex-column justify-content-center">
-                                <small style="font-size: 0.55rem; line-height: 1.2;">Get it on</small>
-                                <span style="font-weight: 600; font-size: 0.75rem; line-height: 1.2;">Google Play</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-1">
-                        <a href="http://www.wedshoots.com/uk/download?albumId=UKaa0838d4" target="_blank" class="btn btn-dark lang-it">Accedi alla versione Web</a>
-                        <a href="http://www.wedshoots.com/uk/download?albumId=UKaa0838d4" target="_blank" class="btn btn-dark lang-en">Access Web version</a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
 
         <!-- ── REGALO ── -->
         <div class="tab-pane fade" id="gift">
