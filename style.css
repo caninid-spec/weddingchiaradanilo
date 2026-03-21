@@ -1,0 +1,564 @@
+/* ============================================================
+   FONT CUSTOM
+============================================================ */
+@font-face {
+    font-family: 'WeddingFontCustom';
+    src: url('TheWeddingSignature-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ============================================================
+   ICONE SVG INLINE (sostituzione Bootstrap Icons)
+============================================================ */
+.bi {
+    display: inline-block;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
+.bi::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    background-position: center;
+}
+.bi-arrow-right-square::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z'/%3E%3Cpath fill='%231a3c40' d='M4 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5A.5.5 0 0 0 4 8'/%3E%3C/svg%3E");
+}
+.bi-arrow-left-square::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z'/%3E%3Cpath fill='%231a3c40' d='M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5A.5.5 0 0 1 12 8'/%3E%3C/svg%3E");
+}
+.bi-camera-fill::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23c49a6c' d='M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0'/%3E%3Cpath fill='%23c49a6c' d='M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0'/%3E%3C/svg%3E");
+    width: 2rem;
+    height: 2rem;
+    background-size: 2rem;
+}
+.bi-apple::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-3.345.728-3.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282'/%3E%3Cpath fill='%231a3c40' d='M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-3.345.728-3.43'/%3E%3C/svg%3E");
+}
+.bi-google-play::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L2.333.215C1.39-.341.229.24 1.03 1.27'/%3E%3C/svg%3E");
+}
+.bi-bank::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a3c40' d='M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 4h.89zM2.5 7h1v6.5H5V7h1.5v6.5H8V7h1.5v6.5H11V7h1.5v6.5h.957a.5.5 0 0 1 .491.408l.5 3A.5.5 0 0 1 14 17H2a.5.5 0 0 1-.491-.592l.5-3A.5.5 0 0 1 2.5 13z'/%3E%3C/svg%3E");
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: 1.2rem;
+}
+.fs-5.bi::before { width: 1.25rem; height: 1.25rem; background-size: 1.25rem; }
+
+/* ============================================================
+   VARIABILI GLOBALI
+============================================================ */
+:root {
+    --primary:               #1a3c40;
+    --gold:                  #c49a6c;
+    --light-bg:              #fffefc;
+    --card-bg:               transparent;
+    --navbar:                #fffefc;
+    --font-body:             'Montserrat', sans-serif;
+    --font-ui:               'Montserrat', sans-serif;
+    --font-serif:            'Montserrat', sans-serif;
+    --font-signature:        'WeddingFontCustom', serif;
+    --content-max-width:     960px;
+    --content-padding-desktop: 0 60px;
+    --content-padding-mobile:  20px 20px;
+}
+
+/* ============================================================
+   STRUTTURA BASE
+============================================================ */
+html, body { height: 100%; margin: 0; }
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    background: var(--light-bg);
+    color: var(--primary);
+    overflow-x: hidden;
+}
+p  { line-height: 1.4; margin-bottom: 0.9rem; }
+h2 { font-size: 1.8rem; }
+
+@media (min-width: 992px) {
+    body { font-size: 1.05rem; }
+    h2   { font-size: 2.5rem; }
+}
+
+/* ============================================================
+   LINK & BOTTONI
+============================================================ */
+a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+a:hover { color: var(--primary); }
+
+.btn-dark {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    padding: 10px 20px;
+    border-radius: 0;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+/* Bootstrap forza i colori su .btn-dark, serve specificità più alta */
+.btn.btn-dark:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {
+    .btn-dark { padding: 14px 35px; font-size: 0.8rem; }
+}
+
+/* Bottoni store app */
+.btn-store {
+    border-radius: 8px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.btn-store small  { font-size: 0.55rem; line-height: 1.2; }
+.btn-store span   { font-weight: 600; font-size: 0.75rem; line-height: 1.2; }
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+.navbar-custom {
+    background-color: var(--navbar);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1050;
+    padding: 10px 0;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.nav-link-custom {
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--primary);
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+}
+.nav-link-custom.active {
+    background-color: var(--gold);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .nav-link-custom { font-size: 0.8rem; padding: 7px 8px; }
+}
+
+/* ============================================================
+   LAYOUT PRINCIPALE
+============================================================ */
+.main-content { flex: 1 0 auto; margin-top: 75px; }
+
+@media (max-width: 576px) {
+    .main-content { margin-top: 70px; }
+}
+
+.content-box {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: var(--content-padding-mobile);
+}
+@media (min-width: 992px) {
+    .content-box { padding: var(--content-padding-desktop); }
+}
+
+/* ============================================================
+   HERO SECTION
+============================================================ */
+.hero-section {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Home hero — mobile first */
+#home .hero-section {
+    height: 100vh;
+    background-image: url('a.webp');
+    background-position: center 10%;
+}
+@media (min-width: 769px) {
+    #home .hero-section { background-position: center 40%; }
+}
+
+/* Location hero — desktop */
+@media (min-width: 992px) {
+    #location .hero-section {
+        height: 50vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: transparent;
+    }
+}
+
+.hero-overlay        { position: absolute; inset: 0; background: rgba(0,0,0,0); }
+.hero-content-wrapper {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* ============================================================
+   SEZIONI — INTESTAZIONI E TITOLI
+============================================================ */
+
+/* Titolo di sezione uniforme */
+.section-label {
+    font-size: 1.9rem;
+    color: var(--gold);
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.section-label-lg {
+    font-size: 1.7rem;
+    color: var(--gold);
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+/* Titolo card blog/info (es. "Scarpe", "Alberghi") */
+.card-title-gold {
+    font-size: 1.2rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+/* Titolo app-download (es. "Scarica l'App") */
+.app-section-title {
+    font-size: 1rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+/* Link hotel/ristorante — colore primario */
+.link-primary-color {
+    color: var(--primary);
+}
+
+/* Tooltip anchor — parola sottolineata punteggiata */
+.tooltip-anchor {
+    border-bottom: 1px dotted var(--gold);
+    cursor: help;
+    color: var(--gold);
+}
+
+/* ============================================================
+   TIPOGRAFIA SPECIALE
+============================================================ */
+.font-signature {
+    font-family: var(--font-signature);
+    font-size: clamp(4.5rem, 12vw, 12rem);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.font-location-title {
+    font-family: var(--font-signature);
+    font-size: clamp(2.2rem, 9vw, 4rem);
+    color: var(--primary);
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.count-no {
+    font-family: var(--font-signature);
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: white;
+    line-height: 1;
+}
+
+/* Testo data/luogo sotto countdown */
+.home-event-info {
+    font-family: var(--font-ui);
+    letter-spacing: 2px;
+}
+
+/* Testo "Il nostro matrimonio" */
+.home-pretitle {
+    letter-spacing: 3px;
+}
+
+/* Colonna countdown */
+.countdown-col { min-width: 70px; }
+
+/* ============================================================
+   CONTENT-BOX LOCATION (niente padding-bottom)
+============================================================ */
+.content-box-location-header {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.content-box-location-body {
+    padding-top: 15px;
+}
+
+/* ============================================================
+   CARD GENERICA
+============================================================ */
+.general-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .general-card-container { flex-direction: row; }
+}
+.general-card-card {
+    flex: 1;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--card-bg);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.general-card-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.general-card-card i  { font-size: 2rem; color: var(--primary); margin-bottom: 15px; display: block; }
+.general-card-title   { font-family: var(--font-serif); font-size: 1.4rem; color: var(--primary); margin-bottom: 10px; }
+.general-card-text    { font-size: 0.9rem; line-height: 1.6; color: var(--primary); margin: 0; }
+
+/* ============================================================
+   BLOG CARD
+============================================================ */
+.blog-card:not(:last-child) {
+    border-bottom: none;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+/* Hero image nelle blog card */
+.blog-card-hero { background-image: var(--bg-img); }
+
+/* ============================================================
+   INNER CARD
+============================================================ */
+.inner-card { background: var(--card-bg); padding: 0; }
+.col-12:not(:last-child) .inner-card { padding-bottom: 0; }
+.col-12:not(:last-child) .inner-card::after {
+    content: '';
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    border-bottom: 0px solid rgba(26,60,64,0.2);
+}
+
+/* ============================================================
+   IBAN CARD
+============================================================ */
+.iban-container { display: flex; justify-content: center; margin-top: 50px; }
+.iban-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 17px 12px;
+    background: var(--card-bg);
+    text-align: center;
+}
+.iban-card i  { font-size: 1.2rem; color: var(--primary); margin-bottom: 5px; display: block; }
+.iban-title   { font-family: var(--font-ui); font-weight: 600; font-size: 0.9rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+.iban-text    { font-family: var(--font-body); font-size: 1rem; color: var(--primary); margin: 0; letter-spacing: 1px; word-break: break-all; }
+
+@media (max-width: 576px) {
+    .iban-text { font-size: 0.85rem; }
+}
+
+/* ============================================================
+   SEZIONE FOTO — QR card
+============================================================ */
+.qr-card {
+    max-width: 380px;
+    width: 80%;
+}
+.qr-img-wrapper {
+    padding: 6px;
+    display: inline-block;
+    border-radius: 8px;
+    line-height: 0;
+    background: transparent;
+}
+.qr-img { width: 160px; height: 160px; object-fit: contain; }
+
+.wedshoots-label {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+/* ============================================================
+   SEZIONE REGALO — layout immagine + iban
+============================================================ */
+.gift-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.gift-image-col {
+    flex: 1;
+    min-width: 200px;
+    max-width: 350px;
+}
+.gift-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.gift-iban-col {
+    flex: 1;
+    min-width: 200px;
+    max-width: 350px;
+}
+.gift-iban-col .iban-container { margin: 0; }
+.gift-iban-col .iban-card { max-width: 600px; width: 100%; }
+
+/* ============================================================
+   FOOTER & LINGUA
+============================================================ */
+.footer-lang {
+    flex-shrink: 0;
+    padding: 25px 15px;
+    text-align: center;
+    background: var(--light-bg);
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+.lang-switch-static { font-family: var(--font-ui); font-size: 0.75rem; color: #ccc; }
+.lang-btn           { cursor: pointer; color: #888; transition: color 0.3s; padding: 5px 0; }
+.lang-btn.active    { color: var(--primary); font-weight: bold; border-bottom: 1px solid var(--primary); }
+
+/* ============================================================
+   UTILITÀ LINGUA
+============================================================ */
+html[lang="it"] .lang-en { display: none; }
+html[lang="en"] .lang-it { display: none; }
+
+/* ============================================================
+   HOME ATTIVA (fullscreen)
+============================================================ */
+body.home-active               { overflow: hidden; }
+body.home-active .main-content { margin-top: 0; }
+body.home-active .footer-lang  { position: fixed; bottom: 20px; left: 0; right: 0; background: transparent; border: none; }
+body.home-active .lang-btn     { color: rgba(255,255,255,0.8); }
+body.home-active .lang-btn.active { color: white; border-bottom: 1px solid white; }
+
+/* ============================================================
+   TALLY FORM
+============================================================ */
+.tally-container {
+    background: transparent;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   TOOLTIP
+============================================================ */
+.tooltip-wide .tooltip-inner { max-width: 250px; }
+
+/* ============================================================
+   LINK IN LOCATION (sottolineati per visibilità)
+============================================================ */
+#location a:not(.btn) {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* ============================================================
+   OTTIMIZZAZIONI MOBILE (< 768px)
+============================================================ */
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .nav-container   { gap: 3px; }
+    .nav-link-custom { font-size: 0.65rem; padding: 4px 5px; letter-spacing: 0; }
+
+    /* Layout */
+    .content-box { padding: 0 20px; }
+
+    /* Home countdown */
+    #home .hero-content-wrapper .d-flex.justify-content-center { margin-top: 7rem; }
+    #home .d-flex.gap-3 { gap: 0.5rem; }
+    #home .countdown-col { min-width: 40px; }
+    .count-no {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+        text-shadow: 3px 3px 16px rgba(0,0,0,0.88);
+    }
+    .hero-content-wrapper {
+        padding-top: 60px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Blog card: immagine sopra, testo sotto */
+    .blog-card .row          { flex-direction: column; }
+    .blog-card .col-md-5,
+    .blog-card .col-md-7     { width: 100%; max-width: 100%; }
+    .blog-card .hero-section {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Location */
+    #location .hero-section {
+        height: 28vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+    }
+
+    /* Regalo */
+    .gift-layout      { flex-direction: column; align-items: center; }
+    .iban-container   { margin-top: 16px; }
+    .iban-card        { max-width: 100%; }
+
+    /* Foto */
+    .general-card-card { padding: 16px 12px; }
+
+    /* RSVP */
+    .tally-container { padding: 8px 0; }
+
+    /* Blog card margine */
+    .blog-card.mb-5 { margin-bottom: 1.5rem; }
+}
