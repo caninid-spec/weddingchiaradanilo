@@ -93,132 +93,136 @@
                     <p class="lang-en mt-3">Tips for enjoying the wedding day to the fullest</p>
                 </div>
 
-                <!-- Card: Scarpe -->
-                <article class="blog-card mb-5">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-md-5">
-                            <div class="hero-section" style="background-image: url('scarpe.png');"></div>
-                        </div>
-                        <div class="col-md-7 p-4">
-                            <h5 class="text-uppercase card-title-gold lang-it">Scarpe</h5>
-                            <h5 class="text-uppercase card-title-gold lang-en">Shoes</h5>
-                            <p class="lang-it text-muted mb-0">Vi consigliamo <strong>tacchi bassi o larghi</strong>. Festeggeremo su un mattonato irregolare e un prato.</p>
-                            <p class="lang-en text-muted mb-0">We highly recommend <strong>block heels</strong> for your comfort. We will celebrate on irregular stone floors and gardens.</p>
+                <!-- Griglia selettori -->
+                <div class="info-selector-grid">
+                    <button class="info-selector-card active" data-target="info-scarpe">
+                        <span class="info-selector-label lang-it">Scarpe</span>
+                        <span class="info-selector-label lang-en">Shoes</span>
+                    </button>
+                    <button class="info-selector-card" data-target="info-alberghi">
+                        <span class="info-selector-label lang-it">Alberghi</span>
+                        <span class="info-selector-label lang-en">Where to Stay</span>
+                    </button>
+                    <button class="info-selector-card" data-target="info-spostamenti">
+                        <span class="info-selector-label lang-it">Spostamenti</span>
+                        <span class="info-selector-label lang-en">Transfer</span>
+                    </button>
+                    <button class="info-selector-card" data-target="info-suggerimenti">
+                        <span class="info-selector-label lang-it">Suggerimenti per chi viene da fuori</span>
+                        <span class="info-selector-label lang-en">What to do</span>
+                    </button>
+                </div>
+
+                <!-- Pannello contenuti -->
+                <div class="info-content-panel">
+
+                    <!-- Scarpe -->
+                    <div class="info-panel" id="info-scarpe">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-5">
+                                <div class="hero-section" style="background-image: url('scarpe.png');"></div>
+                            </div>
+                            <div class="col-md-7 p-4">
+                                <p class="lang-it mb-0">Vi consigliamo <strong>tacchi bassi o larghi</strong>. Festeggeremo su un mattonato irregolare e un prato.</p>
+                                <p class="lang-en mb-0">We highly recommend <strong>block heels</strong> for your comfort. We will celebrate on irregular stone floors and gardens.</p>
+                            </div>
                         </div>
                     </div>
-                </article>
 
-                <!-- Card: Alberghi -->
-                <article class="blog-card mb-5">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-md-5">
-                            <div class="hero-section" style="background-image: url('albergo.png');"></div>
-                        </div>
-                        <div class="col-md-7 p-4">
-                            <h5 class="text-uppercase card-title-gold lang-it">Alberghi</h5>
-                            <h5 class="text-uppercase card-title-gold lang-en">Where to Stay</h5>
-                            <div class="row g-2">
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">
-                                        <h6 class="mb-1 lang-it"><strong>Best Western Hotel Corsi</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>Best Western Hotel Corsi</strong></h6>
-                                        <p class="mb-1 small lang-it">Albergo più vicino alla location. Perfetto soprattutto per chi decidesse di prenotare all'ultimo momento.
-                                            <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="tooltip-wide"
-                                                  title="Contattare la struttura per E-mail menzionando il codice: CHIARA&amp;DANILOWEDDING2026"
-                                                  class="tooltip-anchor">Convenzionato</span> con il nostro matrimonio.</p>
-                                        <p class="mb-1 small lang-en">The closest hotel to the venue. It's perfect for those making last-minute plans. We have a special
-                                            <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="tooltip-wide"
-                                                  title="Please contact the hotel by E-mail and mention the code: CHIARA&amp;DANILOWEDDING2026"
-                                                  class="tooltip-anchor">agreement</span> available.</p>
-                                        <a target="_blank" rel="nofollow" href="https://www.hotelcorsi.it/"    class="small text-decoration-none link-primary-color lang-it">Sito Web →</a>
-                                        <a target="_blank" rel="nofollow" href="https://www.hotelcorsi.it/en/" class="small text-decoration-none link-primary-color lang-en">Website →</a>
-                                    </div>
+                    <!-- Alberghi -->
+                    <div class="info-panel" id="info-alberghi" style="display:none">
+                        <div class="row g-0 align-items-start">
+                            <div class="col-md-5">
+                                <div class="hero-section" style="background-image: url('albergo.png');"></div>
+                            </div>
+                            <div class="col-md-7 p-4">
+                                <div class="inner-card">
+                                    <h6 class="mb-1 lang-it"><strong>Best Western Hotel Corsi</strong></h6>
+                                    <h6 class="mb-1 lang-en"><strong>Best Western Hotel Corsi</strong></h6>
+                                    <p class="mb-1 small lang-it">Albergo più vicino alla location. Perfetto soprattutto per chi decidesse di prenotare all'ultimo momento.
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="tooltip-wide"
+                                              title="Contattare la struttura per E-mail menzionando il codice: CHIARA&amp;DANILOWEDDING2026"
+                                              class="tooltip-anchor">Convenzionato</span> con il nostro matrimonio.</p>
+                                    <p class="mb-1 small lang-en">The closest hotel to the venue. It's perfect for those making last-minute plans. We have a special
+                                        <span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="tooltip-wide"
+                                              title="Please contact the hotel by E-mail and mention the code: CHIARA&amp;DANILOWEDDING2026"
+                                              class="tooltip-anchor">agreement</span> available.</p>
+                                    <a target="_blank" rel="nofollow" href="https://www.hotelcorsi.it/"    class="small text-decoration-none link-primary-color lang-it">Sito Web →</a>
+                                    <a target="_blank" rel="nofollow" href="https://www.hotelcorsi.it/en/" class="small text-decoration-none link-primary-color lang-en">Website →</a>
                                 </div>
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">
-                                        <h6 class="mb-1 lang-it"><strong>B&amp;B HOTEL Roma Fiumicino Aeroporto Fiera 2</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>B&amp;B HOTEL Roma Fiumicino Aeroporto Fiera 2</strong></h6>
-                                        <p class="mb-1 small lang-it">Hotel situato accanto all'aeroporto di Roma Fiumicino.</p>
-                                        <p class="mb-1 small lang-en">Hotel near Fiumicino Airport.</p>
-                                        <a target="_blank" rel="nofollow" href="https://www.hotel-bb.com/it/hotel/roma-fiumicino-aeroporto-fiera-2?utm_source=googlemaps&utm_medium=fichehotel&utm_campaign=yext&test=1" class="small text-decoration-none link-primary-color lang-it">Sito Web →</a>
-                                        <a target="_blank" rel="nofollow" href="https://www.hotel-bb.com/en/hotel/roma-fiumicino-aeroporto-fiera-2?utm_source=googlemaps&utm_medium=fichehotel&utm_campaign=yext&test=1" class="small text-decoration-none link-primary-color lang-en">Website →</a>
-                                    </div>
+                                <div class="info-panel-divider"></div>
+                                <div class="inner-card">
+                                    <h6 class="mb-1 lang-it"><strong>B&amp;B HOTEL Roma Fiumicino Aeroporto Fiera 2</strong></h6>
+                                    <h6 class="mb-1 lang-en"><strong>B&amp;B HOTEL Roma Fiumicino Aeroporto Fiera 2</strong></h6>
+                                    <p class="mb-1 small lang-it">Hotel situato accanto all'aeroporto di Roma Fiumicino.</p>
+                                    <p class="mb-1 small lang-en">Hotel near Fiumicino Airport.</p>
+                                    <a target="_blank" rel="nofollow" href="https://www.hotel-bb.com/it/hotel/roma-fiumicino-aeroporto-fiera-2?utm_source=googlemaps&utm_medium=fichehotel&utm_campaign=yext&test=1" class="small text-decoration-none link-primary-color lang-it">Sito Web →</a>
+                                    <a target="_blank" rel="nofollow" href="https://www.hotel-bb.com/en/hotel/roma-fiumicino-aeroporto-fiera-2?utm_source=googlemaps&utm_medium=fichehotel&utm_campaign=yext&test=1" class="small text-decoration-none link-primary-color lang-en">Website →</a>
                                 </div>
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">
-                                        <h6 class="mb-1 lang-it"><strong>Hotel a Roma</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>Hotel in Rome</strong></h6>
-                                        <p class="mb-1 small lang-it">Per gli alberghi nel centro di Roma è veramente difficile darvi suggerimenti.<br>
-                                            Vi consigliamo di scegliere in autonomia in funzione delle disponibilità.<br>
-                                            Provvederemo ad un transfer dalla stazione di Roma Ostiense.</p>
-                                        <p class="mb-1 small lang-en">For hotels in the city center of Rome, it's really difficult for us to give specific recommendations.<br>
-                                            We suggest choosing independently based on availability.<br>
-                                            We will provide a transfer from Roma Ostiense train station.</p>
-                                    </div>
+                                <div class="info-panel-divider"></div>
+                                <div class="inner-card">
+                                    <h6 class="mb-1 lang-it"><strong>Hotel a Roma</strong></h6>
+                                    <h6 class="mb-1 lang-en"><strong>Hotel in Rome</strong></h6>
+                                    <p class="mb-1 small lang-it">Per gli alberghi nel centro di Roma è veramente difficile darvi suggerimenti.<br>
+                                        Vi consigliamo di scegliere in autonomia in funzione delle disponibilità.<br>
+                                        Provvederemo ad un transfer dalla stazione di Roma Ostiense.</p>
+                                    <p class="mb-1 small lang-en">For hotels in the city center of Rome, it's really difficult for us to give specific recommendations.<br>
+                                        We suggest choosing independently based on availability.<br>
+                                        We will provide a transfer from Roma Ostiense train station.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </article>
 
-                <!-- Card: Spostamenti -->
-                <article class="blog-card mb-5">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-md-5">
-                            <div class="hero-section" style="background-image: url('bus.png');"></div>
-                        </div>
-                        <div class="col-md-7 p-4">
-                            <h5 class="text-uppercase card-title-gold lang-it">Spostamenti</h5>
-                            <h5 class="text-uppercase card-title-gold lang-en">Transfer</h5>
-                            <p class="lang-it mb-2"><i class="bi bi-arrow-right-square"></i> Gli ospiti che soggiornano nel centro di Roma possono prendere un <strong>treno regionale</strong> da <strong>Roma Termini</strong> o <strong>Roma Ostiense</strong> e scendere alla fermata <strong>Torre in Pietra–Palidoro</strong> (linea regionale FL5 in direzione <strong>Civitavecchia</strong>).</p>
-                            <p class="lang-en mb-2"><i class="bi bi-arrow-right-square"></i> Guests staying in central Rome can take a <strong>regional train</strong> from <strong>Roma Termini</strong> or <strong>Roma Ostiense</strong> and get off at <strong>Torre in Pietra–Palidoro</strong> station (regional line FL5 towards <strong>Civitavecchia</strong>).</p>
-                            <p class="lang-it mb-2"><i class="bi bi-arrow-right-square"></i> Una volta arrivati alla stazione di <strong>Torre in Pietra–Palidoro</strong>, metteremo a disposizione un <strong>servizio transfer</strong> diretto verso la location.</p>
-                            <p class="lang-en mb-2"><i class="bi bi-arrow-right-square"></i> Once you arrive at <strong>Torre in Pietra–Palidoro</strong> station, we will provide a <strong>transfer service</strong> directly to the venue.</p>
-                            <p class="lang-it mb-0"><i class="bi bi-arrow-left-square"></i> Per il rientro, saranno organizzate <strong>navette</strong> dalla location fino alla stazione di <strong>Roma Ostiense</strong>.</p>
-                            <p class="lang-en mb-0"><i class="bi bi-arrow-left-square"></i> For the return journey, <strong>shuttle transfers</strong> will be organised from the venue back to <strong>Roma Ostiense</strong> station.</p>
+                    <!-- Spostamenti -->
+                    <div class="info-panel" id="info-spostamenti" style="display:none">
+                        <div class="row g-0 align-items-start">
+                            <div class="col-md-5">
+                                <div class="hero-section" style="background-image: url('bus.png');"></div>
+                            </div>
+                            <div class="col-md-7 p-4">
+                                <p class="lang-it mb-2"><i class="bi bi-arrow-right-square"></i> Gli ospiti che soggiornano nel centro di Roma possono prendere un <strong>treno regionale</strong> da <strong>Roma Termini</strong> o <strong>Roma Ostiense</strong> e scendere alla fermata <strong>Torre in Pietra–Palidoro</strong> (linea regionale FL5 in direzione <strong>Civitavecchia</strong>).</p>
+                                <p class="lang-en mb-2"><i class="bi bi-arrow-right-square"></i> Guests staying in central Rome can take a <strong>regional train</strong> from <strong>Roma Termini</strong> or <strong>Roma Ostiense</strong> and get off at <strong>Torre in Pietra–Palidoro</strong> station (regional line FL5 towards <strong>Civitavecchia</strong>).</p>
+                                <p class="lang-it mb-2"><i class="bi bi-arrow-right-square"></i> Una volta arrivati alla stazione di <strong>Torre in Pietra–Palidoro</strong>, metteremo a disposizione un <strong>servizio transfer</strong> diretto verso la location.</p>
+                                <p class="lang-en mb-2"><i class="bi bi-arrow-right-square"></i> Once you arrive at <strong>Torre in Pietra–Palidoro</strong> station, we will provide a <strong>transfer service</strong> directly to the venue.</p>
+                                <p class="lang-it mb-0"><i class="bi bi-arrow-left-square"></i> Per il rientro, saranno organizzate <strong>navette</strong> dalla location fino alla stazione di <strong>Roma Ostiense</strong>.</p>
+                                <p class="lang-en mb-0"><i class="bi bi-arrow-left-square"></i> For the return journey, <strong>shuttle transfers</strong> will be organised from the venue back to <strong>Roma Ostiense</strong> station.</p>
+                            </div>
                         </div>
                     </div>
-                </article>
 
-                <!-- Card: Suggerimenti -->
-                <article class="blog-card mb-5">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-md-5">
-                            <div class="hero-section" style="background-image: url('spritz.png');"></div>
-                        </div>
-                        <div class="col-md-7 p-4">
-                            <h5 class="text-uppercase card-title-gold lang-it">Suggerimenti per chi viene da fuori</h5>
-                            <h5 class="text-uppercase card-title-gold lang-en">What to do</h5>
-                            <div class="row g-2">
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">
-                                        <h6 class="mb-1 lang-it"><strong>Aperitivo in spiaggia</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>Sunset Aperitif on the beach</strong></h6>
-                                        <p class="mb-1 small lang-it">Vicino alla location, molti locali offrono un aperitivo in spiaggia al tramonto. I primi che ci vengono in mente: <strong><a target="_blank" rel="nofollow" href="https://www.singita.it/">Singita Miracle Beach</a></strong> e <strong><a target="_blank" rel="nofollow" href="https://www.controventofregene.com/">Controvento</a></strong>.</p>
-                                        <p class="mb-1 small lang-en">Close to the venue, many places offer an aperitif on the beach at sunset. Some that came to our minds: <strong><a target="_blank" rel="nofollow" href="https://www.singita.it/">Singita Miracle Beach</a></strong> and <strong><a target="_blank" rel="nofollow" href="https://www.controventofregene.com/">Controvento</a></strong>.</p>
-                                    </div>
+                    <!-- Suggerimenti -->
+                    <div class="info-panel" id="info-suggerimenti" style="display:none">
+                        <div class="row g-0 align-items-start">
+                            <div class="col-md-5">
+                                <div class="hero-section" style="background-image: url('spritz.png');"></div>
+                            </div>
+                            <div class="col-md-7 p-4">
+                                <div class="inner-card">
+                                    <h6 class="mb-1 lang-it"><strong>Aperitivo in spiaggia</strong></h6>
+                                    <h6 class="mb-1 lang-en"><strong>Sunset Aperitif on the beach</strong></h6>
+                                    <p class="mb-1 small lang-it">Vicino alla location, molti locali offrono un aperitivo in spiaggia al tramonto. I primi che ci vengono in mente: <strong><a target="_blank" rel="nofollow" href="https://www.singita.it/">Singita Miracle Beach</a></strong> e <strong><a target="_blank" rel="nofollow" href="https://www.controventofregene.com/">Controvento</a></strong>.</p>
+                                    <p class="mb-1 small lang-en">Close to the venue, many places offer an aperitif on the beach at sunset. Some that came to our minds: <strong><a target="_blank" rel="nofollow" href="https://www.singita.it/">Singita Miracle Beach</a></strong> and <strong><a target="_blank" rel="nofollow" href="https://www.controventofregene.com/">Controvento</a></strong>.</p>
                                 </div>
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">
-                                        <h6 class="mb-1 lang-it"><strong>Se avete fame</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>If you get hungry</strong></h6>
-                                        <p class="mb-1 small lang-it">Vi consigliamo di dare un'occhiata al menu del ristorante <strong><a target="_blank" rel="nofollow" href="https://www.osteriadellorologio.net/chef-bio/">Osteria dell'Orologio</a></strong> se volete mangiare del buon pesce.</p>
-                                        <p class="mb-1 small lang-en">We recommend checking out the menu of the restaurant <strong><a target="_blank" rel="nofollow" href="https://www.osteriadellorologio.net/chef-bio/">Osteria dell'Orologio</a></strong> if you want to enjoy some fish.</p>
-                                    </div>
+                                <div class="info-panel-divider"></div>
+                                <div class="inner-card">
+                                    <h6 class="mb-1 lang-it"><strong>Se avete fame</strong></h6>
+                                    <h6 class="mb-1 lang-en"><strong>If you get hungry</strong></h6>
+                                    <p class="mb-1 small lang-it">Vi consigliamo di dare un'occhiata al menu del ristorante <strong><a target="_blank" rel="nofollow" href="https://www.osteriadellorologio.net/chef-bio/">Osteria dell'Orologio</a></strong> se volete mangiare del buon pesce.</p>
+                                    <p class="mb-1 small lang-en">We recommend checking out the menu of the restaurant <strong><a target="_blank" rel="nofollow" href="https://www.osteriadellorologio.net/chef-bio/">Osteria dell'Orologio</a></strong> if you want to enjoy some fish.</p>
                                 </div>
-                                <div class="col-12 mb-2">
-                                    <div class="inner-card">
-                                        <h6 class="mb-1 lang-it"><strong>Giornata alle Terme</strong></h6>
-                                        <h6 class="mb-1 lang-en"><strong>SPA Day</strong></h6>
-                                        <p class="mb-1 small lang-it"><a target="_blank" rel="nofollow" href="https://www.qcterme.com/it/destinazioni/roma">QC Termeroma Spa e Resort</a>: Resort con spa vicino all'aeroporto di Roma Fiumicino, ideale per relax prima o dopo il volo.</p>
-                                        <p class="mb-1 small lang-en"><a target="_blank" rel="nofollow" href="https://www.qcterme.com/destinations/roma">QC Termeroma Spa e Resort</a>: Spa resort near Rome Fiumicino Airport, perfect to relax before or after your flight.</p>
-                                    </div>
+                                <div class="info-panel-divider"></div>
+                                <div class="inner-card">
+                                    <h6 class="mb-1 lang-it"><strong>Giornata alle Terme</strong></h6>
+                                    <h6 class="mb-1 lang-en"><strong>SPA Day</strong></h6>
+                                    <p class="mb-1 small lang-it"><a target="_blank" rel="nofollow" href="https://www.qcterme.com/it/destinazioni/roma">QC Termeroma Spa e Resort</a>: Resort con spa vicino all'aeroporto di Roma Fiumicino, ideale per relax prima o dopo il volo.</p>
+                                    <p class="mb-1 small lang-en"><a target="_blank" rel="nofollow" href="https://www.qcterme.com/destinations/roma">QC Termeroma Spa e Resort</a>: Spa resort near Rome Fiumicino Airport, perfect to relax before or after your flight.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </article>
 
+                </div><!-- /info-content-panel -->
             </div>
         </div>
 
@@ -405,6 +409,18 @@
     });
 
     document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));
+
+    // Info selector cards
+    document.querySelectorAll('.info-selector-card').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.info-selector-card').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const target = btn.dataset.target;
+            document.querySelectorAll('.info-panel').forEach(panel => {
+                panel.style.display = panel.id === target ? '' : 'none';
+            });
+        });
+    });
 </script>
 
 </body>

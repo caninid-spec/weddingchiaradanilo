@@ -368,6 +368,85 @@ a:hover { color: var(--primary); }
 .blog-card-hero { background-image: var(--bg-img); }
 
 /* ============================================================
+   INFO SELECTOR (tab Info/News)
+============================================================ */
+.info-selector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.info-selector-card {
+    border: 1px solid rgba(26,60,64,0.15);
+    background: transparent;
+    padding: 14px 12px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: border-color 0.2s, background 0.2s;
+    min-height: 56px;
+}
+
+.info-selector-card:hover {
+    border-color: var(--gold);
+    background: rgba(196,154,108,0.05);
+}
+
+.info-selector-card.active {
+    border-color: var(--gold);
+    background: rgba(196,154,108,0.08);
+}
+
+.info-selector-label {
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.info-selector-card.active .info-selector-label {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.info-content-panel {
+    padding: 0 4px;
+    min-height: 120px;
+}
+
+.info-panel {
+    animation: infoPanelIn 0.3s ease;
+}
+
+@keyframes infoPanelIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.info-panel-divider {
+    width: 40%;
+    height: 1px;
+    background: rgba(26,60,64,0.12);
+    margin: 14px 0;
+}
+
+@media (max-width: 600px) {
+    .info-selector-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .info-selector-label { font-size: 0.68rem; }
+}
+
+/* ============================================================
    INNER CARD
 ============================================================ */
 .inner-card { background: var(--card-bg); padding: 0; }
