@@ -581,9 +581,10 @@ body.home-active .lang-btn.active { color: white; border-bottom: 1px solid white
 .tooltip-wide .tooltip-inner { max-width: 250px; }
 
 /* ============================================================
-   LINK IN LOCATION (sottolineati per visibilità)
+   LINK IN LOCATION e INFO (sottolineati per visibilità)
 ============================================================ */
-#location a:not(.btn) {
+#location a:not(.btn),
+#news a:not(.btn) {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
