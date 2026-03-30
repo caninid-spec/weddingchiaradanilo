@@ -50,7 +50,7 @@
                         <div class="text-center countdown-col"><span id="minutes" class="count-no">00</span><br><span class="lang-it">Minuti</span>  <span class="lang-en">Mins</span></div>
                         <div class="text-center countdown-col"><span id="seconds" class="count-no">00</span><br><span class="lang-it">Secondi</span> <span class="lang-en">Secs</span></div>
                     </div>
-                    <p class="mt-4 fs-6 home-event-info">04.07.2026 | 17:30<br> Castello di Torre in Pietra</p>
+                    <p class="mt-4 fs-6 home-event-info">04.07.2026 | 17:00<br> Castello di Torre in Pietra</p>
                 </div>
             </div>
         </div>
@@ -373,7 +373,7 @@
     }
 
     function initCountdown() {
-        const weddingDate = new Date("July 4, 2026 17:30:00").getTime();
+        const weddingDate = new Date("July 4, 2026 17:00:00").getTime();
         setInterval(() => {
             const diff = weddingDate - Date.now();
             if (diff < 0) return;
